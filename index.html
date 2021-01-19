@@ -5,31 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  body{
+    background-color: #0e9aa7;
+    overflow: hidden;
+
+  }
+  div{
+    position:absolute;
+    display: inline-block;
+    text-align: center;
+    height: 23.4375rem;
+    width:350px;
+    top: 170px;
+    left: 470px;
+    background-color:#FFFFFF;
+    border-radius: 8px;
+  }
+  span{
+    font-weight: normal;
+  }
+  table{
+    margin: 0 auto;
+  }
+  td{
+    padding: 8px 30px;
+  }
+  #bg-pattern-top{
+    position: relative;
+    right: 18.3125rem;
+    bottom: 35rem;
+  }
+  #bg-pattern-bottom{
+    position: relative;
+    bottom: 40.625rem;
+    left: 40.625rem;
+  }
+  #bg-pattern-card{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <img id="bg-pattern-top" src="images/bg-pattern-top.svg" alt="bg-pattern-top">
+  <img id="bg-pattern-bottom" src="images/bg-pattern-bottom.svg" alt="bg-pattern-bottom">
+  <div>
+    <img id="bg-pattern-card" src="images/bg-pattern-card.svg" alt="bg-pattern-card">
+    <h3>Victor Crest<span> 26</span></h3>
+    <p>London</p>
+    <hr>
+    <table>
+      <thead>
+        <tr>
+          <th>80K</th>
+          <th>803K</th>
+          <th>1.4K</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Followers</td>
+          <td>Likes</td>
+          <td>Photos</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
-</html>
+</html
