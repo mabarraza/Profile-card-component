@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-  body{
-    background-color: #0e9aa7;
-    overflow: hidden;
+    body {
+      background-color: #0e9aa7;
+      overflow: hidden;
 
-  }
-  div{
-    position:absolute;
-    display: inline-block;
-    text-align: center;
-    height: 23.4375rem;
-    width:350px;
-    top: 170px;
-    left: 470px;
-    background-color:#FFFFFF;
-    border-radius: 8px;
-  }
-  span{
-    font-weight: normal;
-  }
-  table{
-    margin: 0 auto;
-  }
-  td{
-    padding: 8px 30px;
-  }
-  #bg-pattern-top{
-    position: relative;
-    right: 18.3125rem;
-    bottom: 35rem;
-  }
-  #bg-pattern-bottom{
-    position: relative;
-    bottom: 40.625rem;
-    left: 40.625rem;
-  }
-  #bg-pattern-card{
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-  }
+    }
+
+    div {
+      position: absolute;
+      display: inline-block;
+      text-align: center;
+      height: 23.4375rem;
+      width: 350px;
+      top: 100px;
+      left: 470px;
+      background-color: #FFFFFF;
+      border-radius: 8px;
+    }
+
+    span {
+      color: #bbbbbb;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: lighter;
+    }
+
+    table {
+      margin: 0 auto;
+    }
+
+    td {
+      padding: 8px 30px;
+    }
+
+    hr{
+      margin-bottom: 20px;
+    }
+
+    section{
+      position: relative;
+      bottom: 70px;
+    }
+
+    h3{
+      font-family:  'Montserrat', sans-serif;
+      font-size: 16;
+    }
+
+    th{
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    #bg-pattern-top {
+      position: relative;
+      right: 18.3125rem;
+      bottom: 35rem;
+    }
+
+    #bg-pattern-bottom {
+      position: relative;
+      bottom: 700px;
+      left: 600px;
+    }
+
+    #bg-pattern-card {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+    #image-victor{
+      position: relative;
+      bottom: 50px;
+      border: 5px solid white;
+      border-radius: 50%;
+    }
+
+    .greycolor{
+      color: #bbbbbb;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+    }
   </style>
 </head>
+
 <body>
   <img id="bg-pattern-top" src="images/bg-pattern-top.svg" alt="bg-pattern-top">
   <img id="bg-pattern-bottom" src="images/bg-pattern-bottom.svg" alt="bg-pattern-bottom">
   <div>
     <img id="bg-pattern-card" src="images/bg-pattern-card.svg" alt="bg-pattern-card">
-    <h3>Victor Crest<span> 26</span></h3>
-    <p>London</p>
-    <hr>
-    <table>
-      <thead>
-        <tr>
-          <th>80K</th>
-          <th>803K</th>
-          <th>1.4K</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Followers</td>
-          <td>Likes</td>
-          <td>Photos</td>
-        </tr>
-      </tbody>
-    </table>
+    <img id="image-victor" src="images/image-victor.jpg" alt="image-victor">
+    <section>
+      <h3>Victor Crest <span>  26</span></h3>
+      <p>London</p>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th>80K</th>
+            <th>803K</th>
+            <th>1.4K</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="greycolor">Followers</td>
+            <td class="greycolor">Likes</td>
+            <td class="greycolor">Photos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </div>
 </body>
+
 </html
