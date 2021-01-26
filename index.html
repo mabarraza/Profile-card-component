@@ -7,16 +7,19 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    html{
+      width:1440px;
+    }
     body {
-      background-color: #0e9aa7;
+      background-color: hsl(185, 75%, 39%);
       overflow: hidden;
-
+      font-family: Kumbh Sans;
     }
 
     div {
@@ -31,12 +34,6 @@
       border-radius: 8px;
     }
 
-    span {
-      color: #bbbbbb;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: lighter;
-    }
-
     table {
       margin: 0 auto;
     }
@@ -47,20 +44,12 @@
 
     hr{
       margin-bottom: 20px;
+      background-color: hsl(0, 0%, 59%);
     }
 
     section{
       position: relative;
       bottom: 70px;
-    }
-
-    h3{
-      font-family:  'Montserrat', sans-serif;
-      font-size: 16;
-    }
-
-    th{
-      font-family: 'Montserrat', sans-serif;
     }
 
     #bg-pattern-top {
@@ -87,9 +76,18 @@
     }
 
     .greycolor{
-      color: #bbbbbb;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 10px;
+      color: hsl(0, 0%, 59%);
+    }
+    .n-s{
+      font-size: 18px;
+    }
+
+    .n{
+      font-weight: 700px;
+    }
+
+    .s{
+      font-weight: 400px;
     }
   </style>
 </head>
@@ -101,15 +99,15 @@
     <img id="bg-pattern-card" src="images/bg-pattern-card.svg" alt="bg-pattern-card">
     <img id="image-victor" src="images/image-victor.jpg" alt="image-victor">
     <section>
-      <h3>Victor Crest <span>  26</span></h3>
+      <h3 class="n-s n">Victor Crest <span class="greycolor">  26</span></h3>
       <p>London</p>
       <hr>
       <table>
         <thead>
           <tr>
-            <th>80K</th>
-            <th>803K</th>
-            <th>1.4K</th>
+            <th class="n-s s">80K</th>
+            <th class="n-s s">803K</th>
+            <th class="n-s s">1.4K</th>
           </tr>
         </thead>
         <tbody>
